@@ -1,26 +1,159 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <title>Тестовое задание для HERO[IN]MARKETING</title>
-</head>
-<body>
-<main>
-    <h1>Hello World</h1>
-    <div class="swiper">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">Можно сколько угодно носиться по свету и посещать всякие города, но главное — отправиться потом туда, где у тебя будет возможность вспомнить ту кучу вещей, которые ты повидал. Ты нигде не побываешь по-настоящему, пока не вернешься домой.</div>
-            <div class="swiper-slide">Можно сколько угодно носиться по свету и посещать всякие города, но главное — отправиться потом туда, где у тебя будет возможность вспомнить ту кучу вещей, которые ты повидал. Ты нигде не побываешь по-настоящему, пока не вернешься домой.</div>
-            <div class="swiper-slide">Можно сколько угодно носиться по свету и посещать всякие города, но главное — отправиться потом туда, где у тебя будет возможность вспомнить ту кучу вещей, которые ты повидал. Ты нигде не побываешь по-настоящему, пока не вернешься домой.</div>
+  </head>
+  <body>
+    <main>
+      <h1 class="visually-hidden">Тестовое задание для HERO[IN]MARKETING</h1>
+      <section class="main">
+        <div class="main__item main__first-screen first-screen">
+          <div class="first-screen__container container">
+            <div class="first-screen__wrapper main__item-wrapper">
+              <picture class="first-screen__bag">
+                <source
+                  srcset="./images/case-img.png 1x, ./images/case-img@2x.png 2x"
+                />
+                <img
+                  src="./images/case-img.png"
+                  srcset="./images/case-img.png 1x, ./images/case-img@2x.png 2x"
+                  alt="Case image"
+                />
+              </picture>
+              <h2 class="first-screen__title">
+                Начать путешествие по продуктам
+              </h2>
+              <p class="first-screen__text">
+                С нами работать удобно, потому что мы объединяем возможность
+                оформить <strong>билеты на все виды транспорта</strong>
+              </p>
+              <div class="first-screen__quote">
+                <p class="first-screen__quote-text">
+                  Мы делаем мультимодальные маршруты, которые позволяют
+                  построить сложный маршрут, объединяя все виды транспорта
+                </p>
+              </div>
+              <ul class="first-screen__circles">
+                <li class="first-screen__circles-item">
+                  <strong>200</strong>
+                  авиаперевозчиков
+                </li>
+                <li class="first-screen__circles-item">
+                  <strong>300</strong>
+                  ж/д перевозчиков
+                </li>
+                <li class="first-screen__circles-item">
+                  <strong>5000</strong>
+                  автобусных перевозчиков
+                </li>
+                <li class="first-screen__circles-item">
+                  <strong>>1.5 млн</strong>
+                  билетов в месяц продается через нашу систему
+                </li>
+              </ul>
+              <div class="first-screen__road main__road">
+                <img
+                  class="main__road-icon first-screen__road-icon"
+                  src="./images/road-bus.svg"
+                  alt="Road bus image"
+                />
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-    </div>
-</main>
-</body>
+        <div class="main__item main__second-screen second-screen">
+          <div class="second-screen__container container">
+            <div class="second-screen__wrapper main__item-wrapper">
+              <h2 class="second-screen__title">
+                Что говорит команда о продуктах
+              </h2>
+              <div class="second-screen__slider">
+                <div class="second-screen__slider-nav">
+                  <div
+                    class="second-screen__slider-nav-button second-screen__slider-nav-button_prev swiper-button-prev"
+                  ></div>
+                  <div
+                    class="second-screen__slider-nav-button second-screen__slider-nav-button_next swiper-button-next"
+                  ></div>
+                </div>
+                <div class="second-screen__slider-content swiper">
+                  <div class="second-screen__slider-wrapper swiper-wrapper">
+                    <p class="second-screen__slider-item swiper-slide">
+                      <span
+                        >Можно сколько угодно носиться по свету и посещать
+                        всякие города, но главное — отправиться потом туда, где
+                        у тебя будет возможность вспомнить ту кучу вещей,
+                        которые ты повидал. Ты нигде не побываешь по-настоящему,
+                        пока не вернешься домой.</span
+                      >
+                    </p>
+                    <p class="second-screen__slider-item swiper-slide">
+                      <span
+                        >Можно сколько угодно носиться по свету и посещать
+                        всякие города, но главное — отправиться потом туда, где
+                        у тебя будет возможность вспомнить ту кучу вещей,
+                        которые ты повидал. Ты нигде не побываешь по-настоящему,
+                        пока не вернешься домой.</span
+                      >
+                    </p>
+                    <p class="second-screen__slider-item swiper-slide">
+                      <span
+                        >Можно сколько угодно носиться по свету и посещать
+                        всякие города, но главное — отправиться потом туда, где
+                        у тебя будет возможность вспомнить ту кучу вещей,
+                        которые ты повидал. Ты нигде не побываешь по-настоящему,
+                        пока не вернешься домой.</span
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="second-screen__person person">
+                <picture class="person__img">
+                  <source
+                    srcset="./images/person.png 1x, ./images/person@2x.png 2x"
+                  />
+                  <img
+                    src="./images/person.png"
+                    srcset="./images/person.png 1x, ./images/person@2x.png 2x"
+                    alt="Person image"
+                  />
+                </picture>
+                <div class="person__info">
+                  <p class="person__info-name">Александр Константинов</p>
+                  <p class="person__info-position">
+                    Директор директорского направления ООО РЖД
+                  </p>
+                </div>
+              </div>
+              <div class="second-screen__road main__road">
+                <img
+                  class="main__road-icon second-screen__road-icon"
+                  src="./images/road-boat.svg"
+                  alt="Road airplane image"
+                />
+                <img
+                  class="main__road-icon second-screen__road-icon gsap-airplane"
+                  class="main__road-icon second-screen__road-icon"
+                  src="./images/road-plane.svg"
+                  alt="Road airplane image"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>

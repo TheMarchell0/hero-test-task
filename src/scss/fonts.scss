@@ -1,6 +1,31 @@
-@font-face{
-  font-family: 'Inter';
-  src: url('../fonts/Inter-Medium.ttf') format('truetype');
+//RussianRail
+
+@font-face {
+  font-family: "RussianRail";
+  src: url("../fonts/RussianRail-G-Pro.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "RussianRail";
+  src: url("../fonts/RussianRail-G-Pro-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "RussianRail";
+  src: url("../fonts/RussianRail-G-Pro-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+//Roboto
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }

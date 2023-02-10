@@ -1,0 +1,53 @@
+//Normalize styles
+@import "vendor";
+
+//Fonts
+@import "fonts";
+
+$mainOrange: #e8331a;
+$mainBlack: #000000;
+$mainWhite: #ffffff;
+
+//Main styles
+* {
+  font-family: "RussianRail";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: $mainBlack;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+li {
+  list-style-type: none;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 1px !important;
+  height: 1px !important;
+  white-space: nowrap !important;
+  -webkit-clip-path: inset(100%) !important;
+  clip-path: inset(100%) !important;
+  clip: rect(0 0 0 0) !important;
+  overflow: hidden !important;
+}
+
+.container {
+  padding: 102px 0 129px 28px;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+//Blocks
+
+@import "blocks/main";
+@import "blocks/first-screen";
+@import "blocks/second-screen";

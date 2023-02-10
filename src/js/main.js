@@ -1,3 +1,4 @@
 import "../index.html";
-import "../scss/main.scss";
+import "../scss/core.scss";
 import "../js/sliders";
+import "../js/gsapAnim";

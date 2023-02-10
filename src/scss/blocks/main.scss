@@ -1,0 +1,23 @@
+.main {
+  display: flex;
+  width: calc(100vw * 2);
+  height: 100%;
+
+  &__item {
+    flex: 100vw 0 0;
+
+    &-wrapper {
+      position: relative;
+    }
+  }
+
+  &__road {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+
+    &-icon {
+      position: absolute;
+    }
+  }
+}
