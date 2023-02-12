@@ -1,5 +1,4 @@
 .first-screen {
-  transform: translateX(-100vw);
   &__title {
     font-family: "Roboto";
     font-weight: 700;
@@ -53,9 +52,56 @@
     max-width: 371px;
     width: 100%;
     height: 371px;
-    background: url("/images/circle-bg.svg") no-repeat center;
     margin: 58px 0 0 374px;
-    background-size: 100%;
+
+    &-decor {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+
+      &::before,
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+      }
+
+      &::before {
+        width: 375px;
+        height: 376px;
+        z-index: -1;
+        top: -2px;
+        left: -2px;
+        background: url("/images/circle-bg.svg") no-repeat center;
+        background-size: 100% 100%;
+      }
+
+      &::after {
+        border-radius: 50%;
+        background: #ff0000;
+        width: 46px;
+        height: 46px;
+        top: 160px;
+        right: 160px;
+        transform: translate(190px, 0);
+        animation: rotateAnim 13s linear;
+        animation-iteration-count: 1;
+      }
+    }
+
+    &-progress {
+      overflow: visible;
+
+      & circle {
+        will-change: stroke-dashoffset;
+        animation: strokeAnim 13s linear;
+        animation-iteration-count: 1;
+        stroke-dashoffset: 0;
+        stroke-dasharray: 314 314;
+      }
+    }
 
     &-item {
       position: absolute;
@@ -69,14 +115,12 @@
       font-weight: 400;
       font-size: 24px;
       line-height: 30px;
-
-      &:not(:first-child) {
-        opacity: 0;
-      }
+      opacity: 0;
+      text-align: center;
 
       & strong {
         font-weight: 700;
-        font-size: 69.1388px;
+        font-size: 65px;
         line-height: 119%;
       }
     }
@@ -93,11 +137,30 @@
     height: 1066px;
     background: url("/images/road.svg") no-repeat center;
     top: 0;
-    right: 55px;
+    right: 64px;
 
     &-icon {
       top: -3px;
       left: 86px;
     }
+  }
+}
+
+@keyframes rotateAnim {
+  from {
+    transform: rotate(0deg) translate(190px, 0) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translate(190px, 0) rotate(-360deg);
+  }
+}
+
+@keyframes strokeAnim {
+  from {
+    stroke-dashoffset: 314;
+  }
+
+  to {
+    stroke-dashoffset: 0;
   }
 }

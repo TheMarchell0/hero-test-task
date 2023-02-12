@@ -1,6 +1,6 @@
 .second-screen {
-  transform: translateX(-100vw);
   align-self: flex-end;
+  margin-bottom: 40px;
 
   &__title {
     font-weight: 700;
@@ -103,11 +103,11 @@
     background-image: url("/images/road-runway.svg");
     background-repeat: no-repeat;
     background-position: 0 102%;
-    bottom: -84px;
+    bottom: -87px;
     left: -71px;
 
     &-icon {
-      bottom: -2px;
+      bottom: 4px;
       left: 75px;
     }
   }
@@ -117,6 +117,7 @@
   margin: -4px 0 0 27px;
   display: flex;
   align-items: center;
+
   &__img {
     margin-right: 30px;
 
@@ -145,6 +146,6 @@
 .gsap-airplane {
   opacity: 0;
   left: initial;
-  bottom: 22px;
+  bottom: 28px;
   right: 552px;
 }
